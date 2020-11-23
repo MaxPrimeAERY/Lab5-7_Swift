@@ -28,9 +28,9 @@ if aSet.isStrictSuperset(of: bSet) {
 }
 //Lab 6
 typealias Chessman = [String:(alpha:Character,num:Int)?]; //шахова фігура
-let chessmans: Chessman = ["Белый король": (alpha: "A", num: 4), "Белый ферзь": (alpha: "B", num: 7), "Черная пешка": nil]
+let chessmans: Chessman = ["Белая королева": (alpha: "A", num: 4), "Белый конь": (alpha: "B", num: 7), "Черная ладья": nil]
 
-if let coordinates = chessmans["Белая королева"] ?? nil {
+if let coordinates = chessmans["Белая королева"]  ?? nil {
     print("Белая королева: \(coordinates)")
 } else {
     print("Белой королевы нет на игровом поле")
